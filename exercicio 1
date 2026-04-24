@@ -1,0 +1,33 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace exercicio_1
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            int valor1;
+            int valor2;
+
+                Console.WriteLine("insira um valor !!! ");
+            valor1 = int.Parse(Console.ReadLine());
+
+                Console.WriteLine("insira outro valor !!! ");
+            valor2 = int.Parse(Console.ReadLine());
+
+            if (valor1 < valor2);
+            { 
+            Console.WriteLine("o valor maior é equivalente a " + valor2);
+            }
+            if else (valor1 > valor2);
+            {
+            Console.WriteLine("o valor maior é equivalente a " + valor1);
+            }
+
+}
+    }
+}
