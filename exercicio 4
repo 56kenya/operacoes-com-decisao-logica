@@ -1,0 +1,36 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp6
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            int vbase;
+            int valtura;
+            int terreno;
+
+            Console.WriteLine("Insira o valor da base: ");
+            vbase = int.Parse(Console.ReadLine());
+
+            Console.WriteLine("Insira o valor da altura: ");
+            valtura = int.Parse(Console.ReadLine());
+
+            terreno = vbase * valtura;
+
+            if (terreno < 100)
+            {
+                Console.WriteLine("A área do terreno é equivalente a: " + terreno +"m²");
+            }
+            else if (terreno > 100)
+            { 
+                Console.WriteLine("Terreno grande");
+            }
+
+        }
+    }
+}
