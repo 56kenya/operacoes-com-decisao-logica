@@ -1,0 +1,42 @@
+using System;
+using System.Collections.Generic;
+using System.Diagnostics.Eventing.Reader;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace exercicio_6
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            double peso;
+            double altura;
+            double imc;
+
+            Console.WriteLine("Insira o valor do seu peso (em quilos): ");
+            peso = double.Parse(Console.ReadLine());
+
+            Console.WriteLine("Insira o valor da sua altura (em centímetros): ");
+            altura = double.Parse(Console.ReadLine());
+
+            altura = altura / 100;
+
+            imc = peso / (altura * altura);
+
+            if (imc < 20)
+            {
+                Console.WriteLine("Você está abaixo do peso ideal.");
+            }
+            else if (imc >= 20 && imc < 25)
+            {
+                Console.WriteLine("Você possui o peso ideal");
+            }
+            else if (imc >= 25)
+            {
+                Console.WriteLine("Você está acima do peso ideal.");
+            }
+        }
+    }
+}
