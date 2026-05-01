@@ -1,0 +1,40 @@
+using System;
+using System.Collections.Generic;
+using System.Diagnostics.Eventing.Reader;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp7
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            int v1;
+            int v2;
+            int v3;
+
+            Console.WriteLine("Insira o primeiro valor do triângulo retângulo: ");
+            v1 = int.Parse(Console.ReadLine());
+
+            Console.WriteLine("Insira o segundo valor do triângulo retângulo: ");
+            v2 = int.Parse(Console.ReadLine());
+
+            Console.WriteLine("Insira o terceiro valor do triângulo retângulo: ");
+            v3 = int.Parse(Console.ReadLine());
+
+            if (v1 * v1 == (v2 * v2) + (v3 * v3))
+                {
+                Console.WriteLine("Triângulo retângulo.");
+                }
+
+            else
+                {
+                Console.WriteLine("Não retângulo.");
+                }
+
+        }
+    }
+}
+
