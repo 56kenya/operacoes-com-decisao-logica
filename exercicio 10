@@ -1,0 +1,35 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp8
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            double p1;
+            double p2;
+            double media;
+
+            Console.WriteLine("Insira o valor de P1: ");
+            p1 = double.Parse(Console.ReadLine());
+            
+            Console.WriteLine("Insira o valor de P2: ");
+            p2 = double.Parse(Console.ReadLine());
+
+            media = (p1 + 2 * p2) / 3; 
+            
+            if (media >= 5)
+            {
+                Console.WriteLine("Aluno aprovado.");   
+            }
+            else
+            {
+                Console.WriteLine("Aluno reprovado.");
+            }
+        }
+    }
+}
