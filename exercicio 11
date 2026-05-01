@@ -1,0 +1,35 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace exercicio_11
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            double p1;
+            double p2;
+
+            Console.WriteLine("Insira o valor de P1:");
+            p1 = double.Parse(Console.ReadLine());
+
+            p2 = (15 - p1) / 2;
+
+            if (p2 <= 0)
+            {
+                Console.WriteLine("Você já está aprovado.");
+            }
+            else if (p2 > 10)
+            {
+                Console.WriteLine("Média não alcançada.");
+            }
+            else
+            {
+                Console.WriteLine("Aluno precisa tirar na P2: " + p2.ToString("F2"));
+            }
+        }
+    }
+}
