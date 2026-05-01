@@ -1,0 +1,63 @@
+using System;
+
+namespace exercicio_6
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            string genero;
+            double peso, altura, imc;
+
+            Console.WriteLine("Insira o seu gênero (M ou F): ");
+            genero = Console.ReadLine();
+
+            Console.WriteLine("Insira o valor do seu peso (em quilos): ");
+            peso = double.Parse(Console.ReadLine());
+
+            Console.WriteLine("Insira o valor da sua altura (em centímetros): ");
+            altura = double.Parse(Console.ReadLine());
+
+            altura = altura / 100;
+
+            imc = peso / (altura * altura);
+
+            if (genero == "F" || genero == "f")
+            {
+                if (imc < 19)
+                {
+                    Console.WriteLine("Abaixo do peso.");
+                }
+                else if (imc < 24)
+                {
+                    Console.WriteLine("Peso ideal.");
+                }
+                else
+                {
+                    Console.WriteLine("Acima do peso.");
+                }
+            }
+            else if (genero == "M" || genero == "m")
+            {
+                if (imc < 20)
+                {
+                    Console.WriteLine("Abaixo do peso.");
+                }
+                else if (imc < 25)
+                {
+                    Console.WriteLine("Peso ideal.");
+                }
+                else
+                {
+                    Console.WriteLine("Acima do peso.");
+                }
+            }
+            else
+            {
+                Console.WriteLine("Gênero inválido.");
+            }
+
+            Console.ReadLine();
+        }
+    }
+}
